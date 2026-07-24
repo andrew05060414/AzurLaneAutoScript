@@ -277,6 +277,7 @@ pre.rich-traceback-code {
 
 #pywebio-scope-header {
     z-index: 100;
+    position: relative;
     display: grid;
     grid-auto-flow: column;
     grid-template-columns: 4.4rem 4rem auto 1fr !important;
@@ -294,7 +295,13 @@ pre.rich-traceback-code {
 }
 
 #pywebio-scope-header_title {
-    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: max-content;
+    max-width: calc(100% - 14rem);
+    margin: 0;
 }
 
 #pywebio-scope-header_title > p {
